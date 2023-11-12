@@ -1,24 +1,18 @@
-/*const list = document.querySelector("ul#categories");
-//console.log(list.innerHTML);
+const list = document.querySelector("ul#categories");
+console.log(list.innerHTML);
 
 const categories = document.querySelectorAll("li.item");
 console.log("Numbers of Categories: "+categories.length);
 
-const ul = document.querySelectorAll("ul");
-const AllUlItem = document.querySelectorAll("li.item");
+const ul = document.querySelector("ul");
+const AllUlItem = document.querySelector("li.item");
 const firstMenuItem = document.querySelector("li.item");
 const firstH2 = firstMenuItem.querySelector("h2");
 const firstsLi = firstMenuItem.querySelectorAll("li");
-
-
+const h2 = document.querySelectorAll("h2");
+const secondH2 = h2.nextElementSibling;
 
 console.log("Category: " + firstH2.textContent);
 console.log("Elements: " + firstsLi.length);
-*/
-const list = document.querySelector("ul#categories");
-const categories = document.querySelectorAll("li.item");
-console.log("Numbers of Categories: "+categories.length);
-
-const ul = document.querySelectorAll("ul");
-//const AllUlItem = list.document.getELementByClassName("item");
-console.log(ul);
+console.log(document.querySelectorAll("h2"));
+console.log(secondH2.);
