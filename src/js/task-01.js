@@ -1,5 +1,5 @@
 const list = document.querySelector("ul#categories");
-console.log(list.innerHTML);
+
 
 const categories = document.querySelectorAll("li.item");
 console.log("Numbers of Categories: "+categories.length);
@@ -14,5 +14,3 @@ const secondH2 = h2.nextElementSibling;
 
 console.log("Category: " + firstH2.textContent);
 console.log("Elements: " + firstsLi.length);
-console.log(document.querySelectorAll("h2"));
-console.log(secondH2.);
