@@ -14,9 +14,13 @@ const images = [
 ];
 
 const list = document.querySelector("ul.gallery");
-const values =Object.values(images);
+
 for (const image of images) {
   const li = document.createElement("img");
-li = `<img src=${values.url} alt=${values.alt}>`;  
+  /*li.setAttribute("src", image.url);
+  li.setAttribute("alt", image.alt);
+  */
+ li.insertAdjacentElement(`beforeend`, `<img src="${image.url}" alt="${image.alt}">`);
+  console.log(li);
+  console.log(image);
 }
-console.log(this.li);
