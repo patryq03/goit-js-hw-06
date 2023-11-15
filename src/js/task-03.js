@@ -14,8 +14,9 @@ const images = [
 ];
 
 const list = document.querySelector("ul.gallery");
-
-for (const {url,alt} of images) {
+const values =Object.values(images);
+for (const image of images) {
   const li = document.createElement("img");
-  li = li.url;
+li = `<img src=${values.url} alt=${values.alt}>`;  
 }
+console.log(this.li);
