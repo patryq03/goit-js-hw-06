@@ -1,16 +1,17 @@
 const div = document.querySelector("#counter");
-let spanValue = document.querySelector("span#value").innerHTML;
-
-const decrementButton= div.firstElementChild;
+let spanValue = document.querySelector("#value");
+spanValue = valueOf(spanValue);
+let counterValue = 0;
+const decrementButton = div.firstElementChild;
 const incrementButton = div.lastElementChild;
 
 const mathButtons = () => {
-    if(decrementButton){
-        spanValue = spanValue-1;
-    }else if(incrementButton){
-        spanValue = spanValue+1;
-    }
+  if (decrementButton) {
+    spanValue = counterValue--;
+  } else if (incrementButton) {
+    spanValue = counterValue++;
   }
-  decrementButton.addEventListener("click", mathButtons);
-  incrementButton.addEventListener("click", mathButtons);
-  console.log(spanValue);
+};
+decrementButton.addEventListener('click', mathButtons);
+incrementButton.addEventListener("click", mathButtons);
+console.log(spanValue);
